@@ -21,4 +21,8 @@ public class Calculatrice {
     public static double diviser(double a, double b){
         return a / b;
     }
+
+    public static double diviserInteger(int a, int b){
+        return a / b;
+    }
 }

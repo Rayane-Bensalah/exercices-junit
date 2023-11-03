@@ -43,4 +43,11 @@ public class CalculatriceTest
         assertEquals(resultat, Calculatrice.max(a,b));
     }
 
+    @Test
+    public void testDiviserParZero() {
+        assertThrows(ArithmeticException.class, () -> {
+            Calculatrice.diviserInteger(2,0);
+        });
+    }
+
 }
